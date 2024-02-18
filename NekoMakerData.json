@@ -1,0 +1,1351 @@
+[
+    {
+        "name": "Summer Camp",
+        "filename": "Summercamp.png",
+        "category": "Background",
+        "weight": 12
+    },
+
+    {
+        "name": "Badwater",
+        "filename": "Badwater.png",
+        "category": "Background",
+        "weight": 12
+    },
+
+    {
+        "name": "Creeper",
+        "filename": "Creeper.png",
+        "category": "Background",
+        "weight": 12
+    },
+
+    {
+        "name": "Enola Neko",
+        "filename": "Enola.png",
+        "category": "Background",
+        "weight": 12
+    },
+
+    {
+        "name": "Eversong",
+        "filename": "Eversong.png",
+        "category": "Background",
+        "weight": 12
+    },
+
+    {
+        "name": "Badwater",
+        "filename": "Badwater.png",
+        "category": "Background",
+        "weight": 12
+    },
+
+    {
+        "name": "Office",
+        "filename": "Fnaf1.png",
+        "category": "Background",
+        "weight": 4
+    },
+
+    {
+        "name": "Jumpscare",
+        "filename": "Fnaf2.png",
+        "category": "Background",
+        "weight": 4
+    },
+
+    {
+        "name": "Freddy",
+        "filename": "Fnaf3.png",
+        "category": "Background",
+        "weight": 4
+    },
+
+    {
+        "name": "Gutchi Room",
+        "filename": "Gucci.png",
+        "category": "Background",
+        "weight": 12
+    },
+
+    {
+        "name": "Gumball",
+        "filename": "Gumball.png",
+        "category": "Background",
+        "weight": 12
+    },
+
+    {
+        "name": "League",
+        "filename": "League.png",
+        "category": "Background",
+        "weight": 12
+    },
+
+    {
+        "name": "Mecca",
+        "filename": "Mecca.png",
+        "category": "Background",
+        "weight": 12
+    },
+
+    {
+        "name": "Nuke",
+        "filename": "Nuke.png",
+        "category": "Background",
+        "weight": 12
+    },
+
+    {
+        "name": "Piltover",
+        "filename": "Piltover.png",
+        "category": "Background",
+        "weight": 12
+    },
+
+    {
+        "name": "Remi Sun",
+        "filename": "Remisun.png",
+        "category": "Background",
+        "weight": 12
+    },
+
+    {
+        "name": "Tokyo",
+        "filename": "Sega.png",
+        "category": "Background",
+        "weight": 12
+    },
+
+    {
+        "name": "Choo choo >:)",
+        "filename": "Train.png",
+        "category": "Background",
+        "weight": 12
+    },
+
+    {
+        "name": "Black",
+        "filename": "Black.png",
+        "category": "Body",
+        "weight": 2
+    },
+
+    {
+        "name": "Brown",
+        "filename": "Brown.png",
+        "category": "Body",
+        "weight": 6
+    },
+
+    {
+        "name": "Pale Brown",
+        "filename": "Paki.png",
+        "category": "Body",
+        "weight": 4
+    },
+
+    {
+        "name": "Pale",
+        "filename": "Pale1.png",
+        "category": "Body",
+        "weight": 12
+    },
+
+    {
+        "name": "Ginger",
+        "filename": "Pale2.png",
+        "category": "Body",
+        "weight": 12
+    },
+
+    {
+        "name": "Tan",
+        "filename": "Tan.png",
+        "category": "Body",
+        "weight": 12
+    },
+
+    {
+        "name": "White",
+        "filename": "White.png",
+        "category": "Body",
+        "weight": 12
+    },
+
+    {
+        "name": "Malenciaga Glasses",
+        "filename": "Balenciaga.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "Blahaj",
+        "filename": "Blahaj.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "Cigarette",
+        "filename": "Cigarette.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "Tiny glasses",
+        "filename": "Eyeglasses.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "Milady Fumo",
+        "filename": "Fumo.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "Gamebob",
+        "filename": "Gamebob.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "Gutchi Glasses",
+        "filename": "Gucci.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "iNeko",
+        "filename": "iNeko.png",
+        "category": "Extra",
+        "weight": 4
+    },
+
+    {
+        "name": "Josie Toy",
+        "filename": "Josie.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "Note",
+        "filename": "Note.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "Bez",
+        "filename": "Pez.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "Piercings",
+        "filename": "Piercings.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "Remilia's Bow",
+        "filename": "Scarlet.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "Ape Slayer",
+        "filename": "Sniper.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "Egg",
+        "filename": "Tamagotchi.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "Toblertwo",
+        "filename": "Toblertwo.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "Vivienne",
+        "filename": "Vivienne.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "Remilia's Wings",
+        "filename": "Wings.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "ZombieX",
+        "filename": "ZombieX.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "Autumn",
+        "filename": "Autumn.png",
+        "category": "Eyes",
+        "weight": 12
+    },
+
+    {
+        "name": "Baby Blue",
+        "filename": "BabyBlue.png",
+        "category": "Eyes",
+        "weight": 12
+    },
+
+    {
+        "name": "Space Gray",
+        "filename": "Black.png",
+        "category": "Eyes",
+        "weight": 12
+    },
+
+    {
+        "name": "Blue",
+        "filename": "Blue.png",
+        "category": "Eyes",
+        "weight": 12
+    },
+
+    {
+        "name": "Brown",
+        "filename": "Brown.png",
+        "category": "Eyes",
+        "weight": 12
+    },
+
+    {
+        "name": "Crying",
+        "filename": "Crying.png",
+        "category": "Eyes",
+        "set": "Crying",
+        "weight": 2
+    },
+
+    {
+        "name": "Gray",
+        "filename": "Gray.png",
+        "category": "Eyes",
+        "weight": 12
+    },
+
+    {
+        "name": "Green",
+        "filename": "Green.png",
+        "category": "Eyes",
+        "weight": 12
+    },
+
+    {
+        "name": "Magenta",
+        "filename": "Magenta.png",
+        "category": "Eyes",
+        "weight": 12
+    },
+
+    {
+        "name": "Orange",
+        "filename": "Orange.png",
+        "category": "Eyes",
+        "weight": 12
+    },
+
+    {
+        "name": "Pink",
+        "filename": "Pink.png",
+        "category": "Eyes",
+        "weight": 12
+    },
+
+    {
+        "name": "Purple",
+        "filename": "Purple.png",
+        "category": "Eyes",
+        "weight": 12
+    },
+
+    {
+        "name": "Red",
+        "filename": "Red.png",
+        "category": "Eyes",
+        "weight": 12
+    },
+
+    {
+        "name": "Rinnegan",
+        "filename": "Rinnegan.png",
+        "category": "Eyes",
+        "weight": 1
+    },
+
+    {
+        "name": "Sharingan",
+        "filename": "Sharingan.png",
+        "category": "Eyes",
+        "weight": 2
+    },
+
+    {
+        "name": "Stars",
+        "filename": "Stars.png",
+        "category": "Eyes",
+        "set": "Star",
+        "weight": 2
+    },
+
+    {
+        "name": "Turqoise",
+        "filename": "Turquoise.png",
+        "category": "Eyes",
+        "weight": 12
+    },
+
+    {
+        "name": "Yellow",
+        "filename": "Yellow.png",
+        "category": "Eyes",
+        "weight": 12
+    },
+
+    {
+        "name": "Default",
+        "filename": "Default.png",
+        "category": "Mouth",
+        "weight": 12
+    },
+
+    {
+        "name": "Fang",
+        "filename": "Fang.png",
+        "category": "Mouth",
+        "weight": 8
+    },
+
+    {
+        "name": "Open Fang",
+        "filename": "OpenFang.png",
+        "category": "Mouth",
+        "weight": 8
+    },
+
+    {
+        "name": "Open",
+        "filename": "Open.png",
+        "category": "Mouth",
+        "weight": 12
+    },
+
+    {
+        "name": "Starmouth",
+        "filename": "Starmouth.png",
+        "category": "Mouth",
+        "set": "Star",
+        "weight": 2
+    },
+
+    {
+        "name": "Crying",
+        "filename": "Crying.png",
+        "category": "Mouth",
+        "set": "Crying",
+        "weight": 2
+    },
+
+    {
+        "name": "Wavy Pink",
+        "filename": "AlbinoPink.png",
+        "category": "Hair",
+        "set": "Albino Pink",
+        "weight": 12
+    },
+
+    {
+        "name": "Wavy White",
+        "filename": "AlbinoWhite.png",
+        "category": "Hair",
+        "set": "Albino White",
+        "weight": 12
+    },
+
+    {
+        "name": "Bob Black",
+        "filename": "BangsBlack.png",
+        "category": "Hair",
+        "set": "Bangs Black",
+        "weight": 12
+    },
+
+    {
+        "name": "Bob Blue",
+        "filename": "BangsBlue.png",
+        "category": "Hair",
+        "set": "Bangs Blue",
+        "weight": 12
+    },
+
+    {
+        "name": "Braided Blonde",
+        "filename": "BraidBlonde.png",
+        "category": "Hair",
+        "set": "Braids Blonde",
+        "weight": 12
+    },
+
+    {
+        "name": "Braided Blue",
+        "filename": "BraidBlue.png",
+        "category": "Hair",
+        "set": "Braids Blue",
+        "weight": 12
+    },
+
+    {
+        "name": "Double Braid Brown",
+        "filename": "BraidsBrown.png",
+        "category": "Hair",
+        "set": "Braids Brown",
+        "weight": 12
+    },
+
+    {
+        "name": "Double Braid Pink",
+        "filename": "BraidsPink.png",
+        "category": "Hair",
+        "set": "Braids Pink",
+        "weight": 12
+    },
+
+    {
+        "name": "Side Bun Pink",
+        "filename": "BunPink.png",
+        "category": "Hair",
+        "set": "Bun Pink",
+        "weight": 12
+    },
+
+    {
+        "name": "Side Bun Violet",
+        "filename": "BunViolet.png",
+        "category": "Hair",
+        "set": "Bun Violet",
+        "weight": 12
+    },
+
+    {
+        "name": "Curly Black",
+        "filename": "CurlyBlack.png",
+        "category": "Hair",
+        "set": "Curly Black",
+        "weight": 12
+    },
+
+    {
+        "name": "Curly Orange",
+        "filename": "CurlyOrange.png",
+        "category": "Hair",
+        "set": "Curly Orange",
+        "weight": 12
+    },
+
+    {
+        "name": "Elsa",
+        "filename": "Elsa.png",
+        "category": "Hair",
+        "set": "Elsa",
+        "weight": 6
+    },
+
+    {
+        "name": "Faye",
+        "filename": "Faye.png",
+        "category": "Hair",
+        "set": "Faye",
+        "weight": 2
+    },
+
+    {
+        "name": "Long Hair Orange",
+        "filename": "GingerOrange.png",
+        "category": "Hair",
+        "set": "Ginger Orange",
+        "weight": 12
+    },
+
+    {
+        "name": "Long Hair Pink",
+        "filename": "GingerPink.png",
+        "category": "Hair",
+        "set": "Ginger Pink",
+        "weight": 12
+    },
+
+    {
+        "name": "Goth Black",
+        "filename": "GothBlack.png",
+        "category": "Hair",
+        "set": "Goth Black",
+        "weight": 12
+    },
+
+    {
+        "name": "Goth Green",
+        "filename": "GothGreen.png",
+        "category": "Hair",
+        "set": "Goth Green",
+        "weight": 12
+    },
+
+    {
+        "name": "Josie",
+        "filename": "Josie.png",
+        "category": "Hair",
+        "set": "Josie",
+        "weight": 4
+    },
+
+    {
+        "name": "Lain",
+        "filename": "Lain.png",
+        "category": "Hair",
+        "set": "Lain",
+        "weight": 2
+    },
+
+    {
+        "name": "Messy Blonde",
+        "filename": "MessyBlonde.png",
+        "category": "Hair",
+        "set": "Messy Blonde",
+        "weight": 12
+    },
+
+    {
+        "name": "Messy Blue",
+        "filename": "MessyBlue.png",
+        "category": "Hair",
+        "set": "Messy Blue",
+        "weight": 12
+    },
+
+    {
+        "name": "Messy White & Red",
+        "filename": "MessyRed.png",
+        "category": "Hair",
+        "set": "Messy Red",
+        "weight": 4
+    },
+
+    {
+        "name": "Miku",
+        "filename": "Miku.png",
+        "category": "Hair",
+        "set": "Miku",
+        "weight": 2
+    },
+
+    {
+        "name": "Misato",
+        "filename": "Misato.png",
+        "category": "Hair",
+        "set": "Misato",
+        "weight": 2
+    },
+
+    {
+        "name": "Pigtails Blonde",
+        "filename": "PigtailsBlonde.png",
+        "category": "Hair",
+        "set": "Pigtails Blonde",
+        "weight": 12
+    },
+
+    {
+        "name": "Pigtails Brown",
+        "filename": "PigtailsBrown.png",
+        "category": "Hair",
+        "set": "Pigtails Brown",
+        "weight": 12
+    },
+
+    {
+        "name": "Ponytail Blonde",
+        "filename": "PonyBlonde.png",
+        "category": "Hair",
+        "weight": 12
+    },
+
+    {
+        "name": "Ponytail Brown",
+        "filename": "PonyBrown.png",
+        "category": "Hair",
+        "set": "Ponytail Brown",
+        "weight": 12
+    },
+
+    {
+        "name": "Sakura Ash",
+        "filename": "SakuraAsh.png",
+        "category": "Hair",
+        "set": "Sakura Ash",
+        "weight": 12
+    },
+
+    {
+        "name": "Sakura Pink",
+        "filename": "SakuraPink.png",
+        "category": "Hair",
+        "set": "Sakura Pink",
+        "weight": 12
+    },
+
+    {
+        "name": "Remilia Scarlet",
+        "filename": "Scarlet.png",
+        "category": "Hair",
+        "set": "Scarlet",
+        "weight": 6
+    },
+
+    {
+        "name": "Short Green",
+        "filename": "ShortGreen.png",
+        "category": "Hair",
+        "set": "Short Green",
+        "weight": 12
+    },
+
+    {
+        "name": "Short Pink",
+        "filename": "ShortPink.png",
+        "category": "Hair",
+        "set": "Short Pink",
+        "weight": 12
+    },
+
+    {
+        "name": "Straight Blonde",
+        "filename": "StraightBlonde.png",
+        "category": "Hair",
+        "set": "Straight Blonde",
+        "weight": 12
+    },
+
+    {
+        "name": "Straight Blue",
+        "filename": "StraightBlue.png",
+        "category": "Hair",
+        "set": "Straight Blue",
+        "weight": 12
+    },
+
+    {
+        "name": "Straight Brown",
+        "filename": "StraightBrown.png",
+        "category": "Hair",
+        "set": "Straight Brown",
+        "weight": 12
+    },
+
+    {
+        "name": "Wavy Pink Tail",
+        "filename": "AlbinoPink.png",
+        "category": "Tail",
+        "set": "Albino Pink",
+        "weight": 12
+    },
+
+    {
+        "name": "Wavy White Tail",
+        "filename": "AlbinoWhite.png",
+        "category": "Tail",
+        "set": "Albino White",
+        "weight": 12
+    },
+
+    {
+        "name": "Bob Black Tail",
+        "filename": "BangsBlack.png",
+        "category": "Tail",
+        "set": "Bangs Black",
+        "weight": 12
+    },
+
+    {
+        "name": "Bob Blue Tail",
+        "filename": "BangsBlue.png",
+        "category": "Tail",
+        "set": "Bangs Blue",
+        "weight": 12
+    },
+
+    {
+        "name": "Braided Blonde Tail",
+        "filename": "BraidBlonde.png",
+        "category": "Tail",
+        "set": "Braids Blonde",
+        "weight": 12
+    },
+
+    {
+        "name": "Braided Blue Tail",
+        "filename": "BraidBlue.png",
+        "category": "Tail",
+        "set": "Braids Blue",
+        "weight": 12
+    },
+
+    {
+        "name": "Double Braid Brown Tail",
+        "filename": "BraidsBrown.png",
+        "category": "Tail",
+        "set": "Braids Brown",
+        "weight": 12
+    },
+
+    {
+        "name": "Double Braid Pink Tail",
+        "filename": "BraidsPink.png",
+        "category": "Tail",
+        "set": "Braids Pink",
+        "weight": 12
+    },
+
+    {
+        "name": "Side Bun Pink Tail",
+        "filename": "BunPink.png",
+        "category": "Tail",
+        "set": "Bun Pink",
+        "weight": 12
+    },
+
+    {
+        "name": "Side Bun Violet Tail",
+        "filename": "BunViolet.png",
+        "category": "Tail",
+        "set": "Bun Violet",
+        "weight": 12
+    },
+
+    {
+        "name": "Curly Black Tail",
+        "filename": "CurlyBlack.png",
+        "category": "Tail",
+        "set": "Curly Black",
+        "weight": 12
+    },
+
+    {
+        "name": "Curly Orange Tail",
+        "filename": "CurlyOrange.png",
+        "category": "Tail",
+        "set": "Curly Orange",
+        "weight": 12
+    },
+
+    {
+        "name": "Elsa Tail",
+        "filename": "Elsa.png",
+        "category": "Tail",
+        "set": "Elsa",
+        "weight": 6
+    },
+
+    {
+        "name": "Faye Tail",
+        "filename": "Faye.png",
+        "category": "Tail",
+        "set": "Faye",
+        "weight": 2
+    },
+
+    {
+        "name": "Long Hair Orange Tail",
+        "filename": "GingerOrange.png",
+        "category": "Tail",
+        "set": "Ginger Orange",
+        "weight": 12
+    },
+
+    {
+        "name": "Long Hair Pink Tail",
+        "filename": "GingerPink.png",
+        "category": "Tail",
+        "set": "Ginger Pink",
+        "weight": 12
+    },
+
+    {
+        "name": "Goth Black Tail",
+        "filename": "GothBlack.png",
+        "category": "Tail",
+        "set": "Goth Black",
+        "weight": 12
+    },
+
+    {
+        "name": "Goth Green Tail",
+        "filename": "GothGreen.png",
+        "category": "Tail",
+        "set": "Goth Green",
+        "weight": 12
+    },
+
+    {
+        "name": "Josie Tail",
+        "filename": "Josie.png",
+        "category": "Tail",
+        "set": "Josie",
+        "weight": 4
+    },
+
+    {
+        "name": "Lain Tail",
+        "filename": "Lain.png",
+        "category": "Tail",
+        "set": "Lain",
+        "weight": 2
+    },
+
+    {
+        "name": "Messy Blonde Tail",
+        "filename": "MessyBlonde.png",
+        "category": "Tail",
+        "set": "Messy Blonde",
+        "weight": 12
+    },
+
+    {
+        "name": "Messy Blue Tail",
+        "filename": "MessyBlue.png",
+        "category": "Tail",
+        "set": "Messy Blue",
+        "weight": 12
+    },
+
+    {
+        "name": "Messy White & Red Tail",
+        "filename": "MessyRed.png",
+        "category": "Tail",
+        "set": "Messy Red",
+        "weight": 4
+    },
+
+    {
+        "name": "Miku Tail",
+        "filename": "Miku.png",
+        "category": "Tail",
+        "set": "Miku",
+        "weight": 2
+    },
+
+    {
+        "name": "Misato Tail",
+        "filename": "Misato.png",
+        "category": "Tail",
+        "set": "Misato",
+        "weight": 2
+    },
+
+    {
+        "name": "Pigtails Blonde Tail",
+        "filename": "PigtailsBlonde.png",
+        "category": "Tail",
+        "set": "Pigtails Blonde",
+        "weight": 12
+    },
+
+    {
+        "name": "Pigtails Brown Tail",
+        "filename": "PigtailsBrown.png",
+        "category": "Tail",
+        "set": "Pigtails Brown",
+        "weight": 12
+    },
+
+    {
+        "name": "Ponytail Blonde Tail",
+        "filename": "PonyBlonde.png",
+        "category": "Tail",
+        "weight": 12
+    },
+
+    {
+        "name": "Ponytail Brown Tail",
+        "filename": "PonyBrown.png",
+        "category": "Tail",
+        "set": "Ponytail Brown",
+        "weight": 12
+    },
+
+    {
+        "name": "Sakura Ash Tail",
+        "filename": "SakuraAsh.png",
+        "category": "Tail",
+        "set": "Sakura Ash",
+        "weight": 12
+    },
+
+    {
+        "name": "Sakura Pink Tail",
+        "filename": "SakuraPink.png",
+        "category": "Tail",
+        "set": "Sakura Pink",
+        "weight": 12
+    },
+
+    {
+        "name": "Remilia Scarlet Tail",
+        "filename": "Scarlet.png",
+        "category": "Tail",
+        "set": "Scarlet",
+        "weight": 6
+    },
+
+    {
+        "name": "Short Green Tail",
+        "filename": "ShortGreen.png",
+        "category": "Tail",
+        "set": "Short Green",
+        "weight": 12
+    },
+
+    {
+        "name": "Short Pink Tail",
+        "filename": "ShortPink.png",
+        "category": "Tail",
+        "set": "Short Pink",
+        "weight": 12
+    },
+
+    {
+        "name": "Straight Blonde Tail",
+        "filename": "StraightBlonde.png",
+        "category": "Tail",
+        "set": "Straight Blonde",
+        "weight": 12
+    },
+
+    {
+        "name": "Straight Blue Tail",
+        "filename": "StraightBlue.png",
+        "category": "Tail",
+        "set": "Straight Blue",
+        "weight": 12
+    },
+
+    {
+        "name": "Straight Brown Tail",
+        "filename": "StraightBrown.png",
+        "category": "Tail",
+        "set": "Straight Brown",
+        "weight": 12
+    },
+
+    {
+        "name": "Niteryx",
+        "filename": "Arcteryx.png",
+        "category": "Hat",
+        "weight": 12
+    },
+
+    {
+        "name": "Ash",
+        "filename": "Ash.png",
+        "category": "Hat",
+        "weight": 12
+    },
+
+    {
+        "name": "Fish Cap",
+        "filename": "Bass.png",
+        "category": "Hat",
+        "weight": 12
+    },
+
+    {
+        "name": "Pink Bow",
+        "filename": "Bowtie.png",
+        "category": "Hat",
+        "weight": 12
+    },
+
+    {
+        "name": "Sigma Cap",
+        "filename": "Cap.png",
+        "category": "Hat",
+        "weight": 12
+    },
+
+    {
+        "name": "Grunkle Fez",
+        "filename": "fez.png",
+        "category": "Hat",
+        "weight": 12
+    },
+
+    {
+        "name": "Gibus",
+        "filename": "Gibus.png",
+        "category": "Hat",
+        "weight": 12
+    },
+
+    {
+        "name": "Goggles",
+        "filename": "Goggles.png",
+        "category": "Hat",
+        "weight": 12
+    },
+
+    {
+        "name": "Cute Headdress",
+        "filename": "Lolita.png",
+        "category": "Hat",
+        "weight": 12
+    },
+
+    {
+        "name": "Strawhat",
+        "filename": "Luffy.png",
+        "category": "Hat",
+        "weight": 12
+    },
+
+    {
+        "name": "Maha Hat",
+        "filename": "Maha.png",
+        "category": "Hat",
+        "weight": 12
+    },
+
+    {
+        "name": "Maid Headdress",
+        "filename": "Maid.png",
+        "category": "Hat",
+        "weight": 12
+    },
+
+    {
+        "name": "Misato's' Beret",
+        "filename": "Misato.png",
+        "category": "Hat",
+        "weight": 8
+    },
+
+    {
+        "name": "Ninja Headband",
+        "filename": "Naruto.png",
+        "category": "Hat",
+        "weight": 12
+    },
+
+    {
+        "name": "Rabadon",
+        "filename": "Rabadon.png",
+        "category": "Hat",
+        "weight": 6
+    },
+
+    {
+        "name": "Remi's Hat",
+        "filename": "Scarlet.png",
+        "category": "Hat",
+        "weight": 8
+    },
+
+    {
+        "name": "Mr. Tentacles",
+        "filename": "Squid.png",
+        "category": "Hat",
+        "weight": 12
+    },
+
+    {
+        "name": "Stageprop",
+        "filename": "Stageprop.png",
+        "category": "Hat",
+        "weight": 12
+    },
+
+    {
+        "name": "Yves Skibidi Ligma Hat",
+        "filename": "YSL.png",
+        "category": "Hat",
+        "weight": 12
+    },
+
+    {
+        "name": "Nape Hoodie",
+        "filename": "Bape.png",
+        "category": "Top",
+        "weight": 12
+    },
+
+    {
+        "name": "Purrberry Cardigan",
+        "filename": "Burberry.png",
+        "category": "Top",
+        "weight": 12
+    },
+
+    {
+        "name": "Feline Denim Jacket",
+        "filename": "Celine.png",
+        "category": "Top",
+        "weight": 12
+    },
+
+    {
+        "name": "Tweed Jacket",
+        "filename": "Chanel.png",
+        "category": "Top",
+        "weight": 12
+    },
+
+    {
+        "name": "Faye Drip",
+        "filename": "Faye.png",
+        "category": "Top",
+        "weight": 12
+    },
+
+    {
+        "name": "Pucci Sweater",
+        "filename": "Gucci.png",
+        "category": "Top",
+        "weight": 12
+    },
+
+    {
+        "name": "Cute Dress",
+        "filename": "lolita.png",
+        "category": "Top",
+        "weight": 12
+    },
+
+    {
+        "name": "Maid Dress",
+        "filename": "Maid.png",
+        "category": "Top",
+        "weight": 12
+    },
+
+    {
+        "name": "Malenciaga Tee",
+        "filename": "Malenciaga.png",
+        "category": "Top",
+        "weight": 12
+    },
+
+    {
+        "name": "McQueen Tee",
+        "filename": "Mcqueen.png",
+        "category": "Top",
+        "weight": 12
+    },
+
+    {
+        "name": "Miku Drip",
+        "filename": "Miku.png",
+        "category": "Top",
+        "weight": 12
+    },
+
+    {
+        "name": "Misato Drip",
+        "filename": "Misato.png",
+        "category": "Top",
+        "weight": 12
+    },
+
+    {
+        "name": "Frada",
+        "filename": "Prada.png",
+        "category": "Top",
+        "weight": 12
+    },
+
+    {
+        "name": "Funny Skeleton Top",
+        "filename": "sans.png",
+        "category": "Top",
+        "weight": 12
+    },
+
+    {
+        "name": "Remi Drip",
+        "filename": "Scarlet.png",
+        "category": "Top",
+        "weight": 12
+    },
+
+    {
+        "name": "Neko Tie Top",
+        "filename": "Sweater.png",
+        "category": "Top",
+        "weight": 12
+    },
+
+    {
+        "name": "Steampunk Top",
+        "filename": "Steampunk.png",
+        "category": "Top",
+        "weight": 12
+    },
+
+    {
+        "name": "Discord Mod",
+        "filename": "Tank.png",
+        "category": "Top",
+        "weight": 12
+    },
+
+    {
+        "name": "Woolen Teddy Jacket",
+        "filename": "Teddy.png",
+        "category": "Top",
+        "weight": 12
+    },
+
+    {
+        "name": "Purrsace",
+        "filename": "Versace.png",
+        "category": "Top",
+        "weight": 12
+    },
+
+    {
+        "name": "Pablo",
+        "filename": "Yzy.png",
+        "category": "Top",
+        "weight": 12
+    }
+]
