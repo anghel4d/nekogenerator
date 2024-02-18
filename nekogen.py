@@ -61,7 +61,7 @@ class nekoItem:
 
         # MANDATORY:
         self.name = name
-        self.filename = filename.lower()
+        self.filename = filename#.lower()
         self.category = category
         self.weight = weight
 
@@ -85,7 +85,11 @@ def weightedSelection(nekoItems):
     return random.choices(nekoItems, (o.weight for o in nekoItems), k = 1)[0]
 
 def budgetedSelection(nekoItems):
-    return [] # TODO: This line here.
+    #if all(item.weight <= 0 for item in nekoItems):
+        # return None  # or any other appropriate response
+    selected = random.choices(nekoItems, weights=[o.weight for o in nekoItems], k = 1)[0]
+    selected.weight -= 1 if selected.weight > 0 else 0
+    return selected
 
 def selectWhereCategoryMatches(collection, category):
         return [x for x in collection if x.category == category]
@@ -235,7 +239,7 @@ def calculateBudgets(nekoItems, nekoCount):
 def buildNekos(start_num = 0, total = 3000, output_dir = "Output/Nekos/"):
     ### SCRIPT EXECUTION
     allNekoItems = nekoItemListFromJSON()
-    budgetedNekos = calculateBudgets(allNekoItems, total)
+    budgetedNekos = []#calculateBudgets(allNekoItems, total)
 
     # Group budgetedNekos by category
     budgetedItemsByCategory = defaultdict(list)
