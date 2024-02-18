@@ -78,14 +78,13 @@ class nekoItem:
 def percentileSelection(chance):
     if random.randint(0, 100) <= chance:
         return True
-
     return False
 
 def weightedSelection(nekoItems):
     return random.choices(nekoItems, (o.weight for o in nekoItems), k = 1)[0]
 
 def selectWhereCategoryMatches(collection, category):
-        return [x for x in collection if x.category == category]
+    return [x for x in collection if x.category == category]
 
 def selectWhereClassMatches(collection, className):
     return [x for x in collection if x.classes.__contains__(className)]
@@ -122,12 +121,8 @@ def nekoItemListFromJSON():
         
     return nekoItems
 
-def budgetedSelection(nekoItems, budgetDict):
-    # TODO: Rewrite this function
-    return []
-
 #### Neko Building
-def addnekoItem(NekoObject, data, categoryName, budgetDict):
+def addnekoItem(NekoObject, data, categoryName):
     """
     @params: NekoObject the Neko we're working with, data the current dataset, category name of the item to add.
     
@@ -135,21 +130,23 @@ def addnekoItem(NekoObject, data, categoryName, budgetDict):
     """
     currentItems = selectWhereCategoryMatches(data, categoryName)
     if not currentItems:
-        return data
+        return None
+    
     # Current category has "set" among its attributes, and NekoObject has some sets loaded in its data.
     firstMatchingItem = next((item for item in currentItems if any(NekoObject.sets) and item.set in NekoObject.sets), None)
     if firstMatchingItem:
-        budgetDict[firstMatchingItem.category + firstMatchingItem.name] -= 1
         NekoObject.addItem(firstMatchingItem)
         return data
     
+    # Not in a set, just choose an item normally
     chosenItem = weightedSelection(currentItems)
     if chosenItem is None:
         return None
+    
     NekoObject.addItem(chosenItem)
     return data #filterFromExcludes(data, chosenItem)
 
-def buildNeko(id, dataSet, budgetDict):
+def buildNeko(id, dataSet, activeLayers):
     """
     @params: id to assign to the Neko object, class to assign to the Neko, working dataset
 
@@ -157,6 +154,22 @@ def buildNeko(id, dataSet, budgetDict):
     """
     thisNeko = NekoObject(id)
     availableItems = dataSet
+
+    for layer in activeLayers:
+        availableItems = addnekoItem(thisNeko, availableItems, layer)
+        if availableItems is None:
+            return None
+
+    return thisNeko
+
+#### The Big One
+def buildNekos(start_num = 0, total_count = 3000, output_dir = "Output/Nekos/"):
+    ### SCRIPT EXECUTION
+    allNekoItems = nekoItemListFromJSON()
+        
+    # Create the Nekos
+    the_nekos = []
+    current = 0
 
     layers = [
         "Background",
@@ -169,79 +182,27 @@ def buildNeko(id, dataSet, budgetDict):
         "Hat",
         "Extra"
     ]
+    for i in range(0, (total_count // 2)):
+        this_neko = buildNeko(i, allNekoItems, layers)
+        if this_neko is None: 
+            break   # Some error occured or something, halt NekoGen.
+        the_nekos.append(this_neko)
+        current += 1
 
-    for layer in layers:
-        availableItems = addnekoItem(thisNeko, availableItems, layer, budgetDict)
-        if availableItems is None:
-            return None
-
-    return thisNeko
-
-def calculateBudgets(nekoItems, nekoCount):
-    budgetDict = {}
-    
-    # Group items by category
-    itemsByCategory = defaultdict(list)
-    for item in nekoItems:
-        itemsByCategory[item.category].append(item)
-
-    # For each category, calculate total weight and then individual item budgets
-    for category, items in itemsByCategory.items():
-        categoryWeight = sum(item.weight for item in items)
-        
-        # Calculate raw budgets and track the rounding error
-        rawBudgets = [(item, (item.weight / categoryWeight) * nekoCount) for item in items]
-        
-        # Calculate the initial rounded budgets and the total of these rounded budgets
-        roundedBudgets = [(item, round(budget)) for item, budget in rawBudgets]
-        roundedTotal = sum(budget for item, budget in roundedBudgets)
-        adjustment = nekoCount - roundedTotal
-        
-        if adjustment != 0:
-            fractionalParts = sorted(rawBudgets, key=lambda x: x[1] - int(x[1]), reverse=True)
-            for i in range(abs(adjustment)):
-                item, _ = fractionalParts[i]
-                # Adjust the budget up or down depending on whether we have a shortfall or surplus
-                for j in range(len(roundedBudgets)):
-                    if roundedBudgets[j][0] == item:
-                        adj_budget = roundedBudgets[j][1] + (1 if adjustment > 0 else -1)
-                        roundedBudgets[j] = (item, adj_budget)
-                        break
-
-        # Create the name/budget dict from roundedBudgets
-        for item, adjustedBudget in roundedBudgets:
-            budgetDict[item.category + item.name] = adjustedBudget
-
-    return budgetDict
-
-#### The Big One
-def buildNekos(start_num = 0, total_count = 3000, output_dir = "Output/Nekos/"):
-    ### SCRIPT EXECUTION
-    allNekoItems = nekoItemListFromJSON()
-    budgetDict = calculateBudgets(allNekoItems, total_count)
-
-    # Group budgetedNekos by category
-    budgetedItemsByCategory = defaultdict(list)
-    for item in allNekoItems:  # Corrected variable name here
-        budgetedItemsByCategory[item.category].append(item)
-
-    # Print total weight of each category
-    for category, items in budgetedItemsByCategory.items():
-        totalWeight = sum(budgetDict[item.category + item.name] for item in items)
-        print(f"Total budgeted weight for category '{category}': {totalWeight}")
-        # Sanity check to ensure total weight equals total nekos to be generated
-        if totalWeight != total_count:
-            print(f"Warning: Total budgeted weight for category '{category}' does not equal {total_count}.")
-        else:
-            print(f"Sanity Check Passed for category '{category}'.")
-        
-    # Create the Nekos
-    the_nekos = []
-    current = 0
-    for i in range(0, total_count):
-        this_neko = buildNeko(i, allNekoItems, budgetDict)
-        if this_neko is None:
-            break
+    layers = [
+        "Background",
+        "Tail",
+        "Body",
+        "Top",
+        "Mouth",
+        "Eyes",
+        "Hair",
+        "Hat"
+    ]
+    for i in range(current, total_count):
+        this_neko = buildNeko(i, allNekoItems, layers)
+        if this_neko is None: 
+            break   # Some error occured or something, halt NekoGen.
         the_nekos.append(this_neko)
         current += 1
 
@@ -255,7 +216,6 @@ def buildNekos(start_num = 0, total_count = 3000, output_dir = "Output/Nekos/"):
     for i in range(len(the_nekos)):
         metadataPath = output_dir + "NekoMetadata/" + str(i + 1 + start_num) + ".json"
         absMetadataPath = os.path.join(script_dir, metadataPath)
-        #print(the_nekos[i].toJSON())
         os.makedirs(os.path.dirname(absMetadataPath), exist_ok=True)
         with open(absMetadataPath, 'w') as f:
             f.write(the_nekos[i].toOpenSeaJSON())
@@ -266,6 +226,5 @@ def buildNekos(start_num = 0, total_count = 3000, output_dir = "Output/Nekos/"):
         with open(absBuilderPath, 'w') as f:
             f.write(the_nekos[i].getBuilderList())
 
-
-# Colored Skulls / 5 blue : 10 Red
+# Neko
 buildNekos(start_num = 0, total_count = 3000, output_dir = "Output/NekoTest/")
