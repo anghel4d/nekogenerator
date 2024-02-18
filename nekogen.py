@@ -185,7 +185,8 @@ def buildNeko(id, dataSet):
     return thisNeko
 
 def calculateBudgets(nekoItems, nekoCount):
-    budgetedItems = [] # do not modify this line. Append the new weight items here
+    budgetedItems = []
+    
     # Group items by category
     itemsByCategory = defaultdict(list)
     for item in nekoItems:
@@ -194,17 +195,41 @@ def calculateBudgets(nekoItems, nekoCount):
     # For each category, calculate total weight and then individual item budgets
     for category, items in itemsByCategory.items():
         categoryWeight = sum(item.weight for item in items)
-        for item in items:
-            # Calculate the budget for each item within this category
-            itemBudget = round((item.weight / categoryWeight) * nekoCount)
-            item.weight = itemBudget
+        
+        # Calculate raw budgets and track the rounding error
+        rawBudgets = [(item, (item.weight / categoryWeight) * nekoCount) for item in items]
+        
+        # Calculate the initial rounded budgets and the total of these rounded budgets
+        roundedBudgets = [(item, round(budget)) for item, budget in rawBudgets]
+        roundedTotal = sum(budget for item, budget in roundedBudgets)
+        
+        # Determine the adjustment needed to match the exact total (nekoCount)
+        adjustment = nekoCount - roundedTotal
+        
+        # Apply adjustments based on the difference, prioritizing items with the largest fractional part of their budget
+        if adjustment != 0:
+            # Sort items by the fractional part of their budget, in descending order
+            fractionalParts = sorted(rawBudgets, key=lambda x: x[1] - int(x[1]), reverse=True)
+            
+            for i in range(abs(adjustment)):
+                item, _ = fractionalParts[i]
+                # Adjust the budget up or down depending on whether we have a shortfall or surplus
+                for j in range(len(roundedBudgets)):
+                    if roundedBudgets[j][0] == item:
+                        adj_budget = roundedBudgets[j][1] + (1 if adjustment > 0 else -1)
+                        roundedBudgets[j] = (item, adj_budget)
+                        break
+
+        # Create copies of the items with adjusted budgets
+        for item, adjustedBudget in roundedBudgets:
+            item.weight = adjustedBudget
             budgetedItems.append(item)
     
     # This is basically just nekoItems, but with the weight field now representing how many of each entry are left.
     # budgetedSelection works similarly to weighted selection, but decrements the chosen item's weight by 1 when chosen
     # when weight = 0, it is always skipped
     # the result at the end should be that every item now has 0 weight (all 2000 budget total has been expended)
-    return budgetedItems # do not modify this line. It should be analogous to nekoItems
+    return budgetedItems
 
 #### The Big One
 def buildNekos(start_num = 0, total = 3000, output_dir = "Output/Nekos/"):
