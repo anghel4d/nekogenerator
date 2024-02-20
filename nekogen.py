@@ -68,7 +68,7 @@ class nekoItem:
         # OPTIONAL:
         self.set = set
         #self.includes = [x.lower() for x in includes]   # Filename of another item or of a category
-        #self.excludes = [x.lower() for x in excludes]   # Filename of another item or of a category
+        self.excludes = [x.lower() for x in excludes]   # Filename of another item or of a category
 
     def toJSON(self):
         return json.dumps(self, default=lambda o: o.__dict__, indent=4)
@@ -144,7 +144,7 @@ def addnekoItem(NekoObject, data, categoryName):
         return None
     
     NekoObject.addItem(chosenItem)
-    return data #filterFromExcludes(data, chosenItem)
+    return filterFromExcludes(data, chosenItem)
 
 def buildNeko(id, dataSet, activeLayers):
     """
@@ -175,14 +175,14 @@ def buildNekos(start_num = 0, total_count = 3000, output_dir = "Output/Nekos/"):
         "Background",
         "Tail",
         "Body",
-        "Top",
-        "Mouth",
-        "Eyes",
         "Hair",
+        "Mouth",
+        "Top",
+        "Eyes",
         "Hat",
         "Extra"
     ]
-    for i in range(0, (total_count // 2)):
+    for i in range(0, int(total_count * 0.75)):
         this_neko = buildNeko(i, allNekoItems, layers)
         if this_neko is None: 
             break   # Some error occured or something, halt NekoGen.
@@ -193,10 +193,10 @@ def buildNekos(start_num = 0, total_count = 3000, output_dir = "Output/Nekos/"):
         "Background",
         "Tail",
         "Body",
-        "Top",
-        "Mouth",
-        "Eyes",
         "Hair",
+        "Mouth",
+        "Top",
+        "Eyes",
         "Hat"
     ]
     for i in range(current, total_count):
@@ -227,4 +227,4 @@ def buildNekos(start_num = 0, total_count = 3000, output_dir = "Output/Nekos/"):
             f.write(the_nekos[i].getBuilderList())
 
 # Neko
-buildNekos(start_num = 0, total_count = 3000, output_dir = "Output/NekoTest/")
+buildNekos(start_num = 0, total_count = 3000, output_dir = "Output/NekoPiercingFix")
