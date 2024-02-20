@@ -61,14 +61,14 @@ class nekoItem:
 
         # MANDATORY:
         self.name = name
-        self.filename = filename#.lower()
+        self.filename = filename
         self.category = category
         self.weight = weight
 
         # OPTIONAL:
         self.set = set
-        #self.includes = [x.lower() for x in includes]   # Filename of another item or of a category
-        self.excludes = [x.lower() for x in excludes]   # Filename of another item or of a category
+        #self.includes = [x for x in includes]   # Filename of another item or of a category
+        self.excludes = [x for x in excludes]   # Filename of another item or of a category
 
     def toJSON(self):
         return json.dumps(self, default=lambda o: o.__dict__, indent=4)
@@ -136,7 +136,7 @@ def addnekoItem(NekoObject, data, categoryName):
     firstMatchingItem = next((item for item in currentItems if any(NekoObject.sets) and item.set in NekoObject.sets), None)
     if firstMatchingItem:
         NekoObject.addItem(firstMatchingItem)
-        return data
+        return filterFromExcludes(data, firstMatchingItem)
     
     # Not in a set, just choose an item normally
     chosenItem = weightedSelection(currentItems)
@@ -227,4 +227,4 @@ def buildNekos(start_num = 0, total_count = 3000, output_dir = "Output/Nekos/"):
             f.write(the_nekos[i].getBuilderList())
 
 # Neko
-buildNekos(start_num = 0, total_count = 3000, output_dir = "Output/NekoPiercingFix")
+buildNekos(start_num = 0, total_count = 3000, output_dir = "Output/NYAAAAAAAAAAAAAAAAAAAA!!!!!")

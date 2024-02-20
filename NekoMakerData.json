@@ -1,7 +1,7 @@
 [
     {
         "name": "Summer Camp",
-        "filename": "Auschwitz.png",
+        "filename": "Summercamp.png",
         "category": "Background",
         "weight": 12
     },
@@ -182,6 +182,34 @@
     },
 
     {
+        "name": "Demon Core",
+        "filename": "Demoncore.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "Basketball",
+        "filename": "Basketball.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "Caterpilled",
+        "filename": "Caterpillar.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
+        "name": "SKIBIDI.",
+        "filename": "Skibidi.png",
+        "category": "Extra",
+        "weight": 12
+    },
+
+    {
         "name": "Blahaj",
         "filename": "Blahaj.png",
         "category": "Extra",
@@ -238,7 +266,7 @@
     },
 
     {
-        "name": "Note",
+        "name": "Death Note",
         "filename": "Note.png",
         "category": "Extra",
         "weight": 12
@@ -439,6 +467,9 @@
         "name": "Default",
         "filename": "Default.png",
         "category": "Mouth",
+        "excludes": [
+            "Piercings.png"
+        ],
         "weight": 12
     },
 
@@ -446,6 +477,9 @@
         "name": "Fang",
         "filename": "Fang.png",
         "category": "Mouth",
+        "excludes": [
+            "Piercings.png"
+        ],
         "weight": 8
     },
 
@@ -467,16 +501,22 @@
         "name": "Starmouth",
         "filename": "Starmouth.png",
         "category": "Mouth",
+        "excludes": [
+            "Piercings.png"
+        ],
         "set": "Star",
-        "weight": 2
+        "weight": 0
     },
 
     {
         "name": "Crying",
         "filename": "Crying.png",
         "category": "Mouth",
+        "excludes": [
+            "Piercings.png"
+        ],
         "set": "Crying",
-        "weight": 2
+        "weight": 0
     },
 
     {
@@ -727,11 +767,11 @@
     },
 
     {
-        "name": "Remilia Scarlet",
-        "filename": "Scarlet.png",
+        "name": "Sailor Moon",
+        "filename": "Sailor.png",
         "category": "Hair",
-        "set": "Scarlet",
-        "weight": 6
+        "set": "Sailor",
+        "weight": 4
     },
 
     {
@@ -1022,11 +1062,11 @@
     },
 
     {
-        "name": "Remilia Scarlet Tail",
-        "filename": "Scarlet.png",
+        "name": "Sailor Moon",
+        "filename": "Sailor.png",
         "category": "Tail",
-        "set": "Scarlet",
-        "weight": 6
+        "set": "Sailor",
+        "weight": 4
     },
 
     {
@@ -1086,6 +1126,13 @@
     {
         "name": "Fish Cap",
         "filename": "Bass.png",
+        "category": "Hat",
+        "weight": 12
+    },
+
+    {
+        "name": "Bells",
+        "filename": "BellTop.png",
         "category": "Hat",
         "weight": 12
     },
