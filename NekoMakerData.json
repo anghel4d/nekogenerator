@@ -817,7 +817,10 @@
     {
         "name": "Wavy Pink Tail",
         "filename": "AlbinoPink.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Albino Pink",
         "weight": 12
     },
@@ -825,7 +828,10 @@
     {
         "name": "Wavy White Tail",
         "filename": "AlbinoWhite.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Albino White",
         "weight": 12
     },
@@ -833,7 +839,7 @@
     {
         "name": "Bob Black Tail",
         "filename": "BangsBlack.png",
-        "category": "Tail",
+        "category": "Tail", 
         "set": "Bangs Black",
         "weight": 12
     },
@@ -841,7 +847,7 @@
     {
         "name": "Bob Blue Tail",
         "filename": "BangsBlue.png",
-        "category": "Tail",
+        "category": "Tail", 
         "set": "Bangs Blue",
         "weight": 12
     },
@@ -849,7 +855,10 @@
     {
         "name": "Braided Blonde Tail",
         "filename": "BraidBlonde.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Braids Blonde",
         "weight": 12
     },
@@ -857,7 +866,10 @@
     {
         "name": "Braided Blue Tail",
         "filename": "BraidBlue.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Braids Blue",
         "weight": 12
     },
@@ -865,7 +877,10 @@
     {
         "name": "Double Braid Brown Tail",
         "filename": "BraidsBrown.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Braids Brown",
         "weight": 12
     },
@@ -873,7 +888,10 @@
     {
         "name": "Double Braid Pink Tail",
         "filename": "BraidsPink.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Braids Pink",
         "weight": 12
     },
@@ -881,7 +899,7 @@
     {
         "name": "Side Bun Pink Tail",
         "filename": "BunPink.png",
-        "category": "Tail",
+        "category": "Tail", 
         "set": "Bun Pink",
         "weight": 12
     },
@@ -889,7 +907,7 @@
     {
         "name": "Side Bun Violet Tail",
         "filename": "BunViolet.png",
-        "category": "Tail",
+        "category": "Tail", 
         "set": "Bun Violet",
         "weight": 12
     },
@@ -897,7 +915,10 @@
     {
         "name": "Curly Black Tail",
         "filename": "CurlyBlack.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Curly Black",
         "weight": 12
     },
@@ -905,7 +926,10 @@
     {
         "name": "Curly Orange Tail",
         "filename": "CurlyOrange.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Curly Orange",
         "weight": 12
     },
@@ -913,7 +937,10 @@
     {
         "name": "Elsa Tail",
         "filename": "Elsa.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Elsa",
         "weight": 6
     },
@@ -921,7 +948,7 @@
     {
         "name": "Faye Tail",
         "filename": "Faye.png",
-        "category": "Tail",
+        "category": "Tail", 
         "set": "Faye",
         "weight": 2
     },
@@ -929,7 +956,7 @@
     {
         "name": "Long Hair Orange Tail",
         "filename": "GingerOrange.png",
-        "category": "Tail",
+        "category": "Tail", 
         "set": "Ginger Orange",
         "weight": 12
     },
@@ -937,7 +964,7 @@
     {
         "name": "Long Hair Pink Tail",
         "filename": "GingerPink.png",
-        "category": "Tail",
+        "category": "Tail", 
         "set": "Ginger Pink",
         "weight": 12
     },
@@ -945,7 +972,10 @@
     {
         "name": "Goth Black Tail",
         "filename": "GothBlack.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Goth Black",
         "weight": 12
     },
@@ -953,7 +983,10 @@
     {
         "name": "Goth Green Tail",
         "filename": "GothGreen.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Goth Green",
         "weight": 12
     },
@@ -961,7 +994,10 @@
     {
         "name": "Josie Tail",
         "filename": "Josie.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Josie",
         "weight": 4
     },
@@ -969,7 +1005,10 @@
     {
         "name": "Lain Tail",
         "filename": "Lain.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Lain",
         "weight": 2
     },
@@ -977,7 +1016,10 @@
     {
         "name": "Messy Blonde Tail",
         "filename": "MessyBlonde.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Messy Blonde",
         "weight": 12
     },
@@ -985,7 +1027,10 @@
     {
         "name": "Messy Blue Tail",
         "filename": "MessyBlue.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Messy Blue",
         "weight": 12
     },
@@ -993,7 +1038,10 @@
     {
         "name": "Messy White & Red Tail",
         "filename": "MessyRed.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Messy Red",
         "weight": 4
     },
@@ -1001,7 +1049,7 @@
     {
         "name": "Miku Tail",
         "filename": "Miku.png",
-        "category": "Tail",
+        "category": "Tail", 
         "set": "Miku",
         "weight": 2
     },
@@ -1009,7 +1057,10 @@
     {
         "name": "Misato Tail",
         "filename": "Misato.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Misato",
         "weight": 2
     },
@@ -1017,7 +1068,10 @@
     {
         "name": "Pigtails Blonde Tail",
         "filename": "PigtailsBlonde.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Pigtails Blonde",
         "weight": 12
     },
@@ -1025,7 +1079,10 @@
     {
         "name": "Pigtails Brown Tail",
         "filename": "PigtailsBrown.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Pigtails Brown",
         "weight": 12
     },
@@ -1033,14 +1090,20 @@
     {
         "name": "Ponytail Blonde Tail",
         "filename": "PonyBlonde.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "weight": 12
     },
 
     {
         "name": "Ponytail Brown Tail",
         "filename": "PonyBrown.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Ponytail Brown",
         "weight": 12
     },
@@ -1048,7 +1111,7 @@
     {
         "name": "Sakura Ash Tail",
         "filename": "SakuraAsh.png",
-        "category": "Tail",
+        "category": "Tail", 
         "set": "Sakura Ash",
         "weight": 12
     },
@@ -1056,7 +1119,7 @@
     {
         "name": "Sakura Pink Tail",
         "filename": "SakuraPink.png",
-        "category": "Tail",
+        "category": "Tail", 
         "set": "Sakura Pink",
         "weight": 12
     },
@@ -1064,7 +1127,10 @@
     {
         "name": "Sailor Moon",
         "filename": "Sailor.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Sailor",
         "weight": 4
     },
@@ -1072,7 +1138,10 @@
     {
         "name": "Short Green Tail",
         "filename": "ShortGreen.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Short Green",
         "weight": 12
     },
@@ -1080,7 +1149,10 @@
     {
         "name": "Short Pink Tail",
         "filename": "ShortPink.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Short Pink",
         "weight": 12
     },
@@ -1088,7 +1160,7 @@
     {
         "name": "Straight Blonde Tail",
         "filename": "StraightBlonde.png",
-        "category": "Tail",
+        "category": "Tail", 
         "set": "Straight Blonde",
         "weight": 12
     },
@@ -1096,7 +1168,7 @@
     {
         "name": "Straight Blue Tail",
         "filename": "StraightBlue.png",
-        "category": "Tail",
+        "category": "Tail", 
         "set": "Straight Blue",
         "weight": 12
     },
@@ -1104,7 +1176,10 @@
     {
         "name": "Straight Brown Tail",
         "filename": "StraightBrown.png",
-        "category": "Tail",
+        "category": "Tail",        
+        "excludes": [
+            "Crying.png"
+        ],
         "set": "Straight Brown",
         "weight": 12
     },
