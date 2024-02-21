@@ -66,11 +66,14 @@ def insert_string_after_string(directory, string_triples):
         data = json.load(f)
         for string1, string2, desired_index in string_triples:
           if string1 in data:
-            print(f"Bells hotfix: {filename}")
-            index = data.index(string1)
-            data.insert(desired_index, string2)  # Add after string1
-            f.seek(0)
-            json.dump(data, f, indent=2)
+            if string1 not in data:
+              print(f"Bells hotfix: {filename}")
+              index = data.index(string1)
+              data.insert(desired_index, string2)  # Add after string1
+              f.seek(0)
+              json.dump(data, f, indent=2)
+            else:
+              print(f"Bells already fixed: {filename}")
 
 # Example usage
 directory = "/home/cris/Documents/dev/composite/CatBuilderData"
