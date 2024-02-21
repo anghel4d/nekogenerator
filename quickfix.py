@@ -1,6 +1,5 @@
 import json
 import os
-import sys
 
 def move_string_in_json(directory, string_pairs):
   """
@@ -19,8 +18,36 @@ def move_string_in_json(directory, string_pairs):
           if string in data:
             index = data.index(string)
             if index != desired_index:
+              print(f"Extras layering hotfix: {filename}")
               data.pop(index)
               data.insert(desired_index, string)
+        f.seek(0)
+        json.dump(data, f, indent=2)
+
+def conditional_move_string_in_json(directory, triples):
+  """
+  Moves strings to desired locations in JSON files within a directory.
+
+  Args:
+    directory: The directory containing the JSON files.
+    triples: A list of triples (string1, string2, desired_index).
+  """
+  for filename in os.listdir(directory):
+    if filename.endswith(".json"):
+      filepath = os.path.join(directory, filename)
+      with open(filepath, "r+") as f:
+        data = json.load(f)
+        for string1, string2, desired_index in triples:
+          # Check if strings exist and desired index is valid
+          if string1 in data and string2 in data and 0 <= desired_index < len(data):
+            index1 = data.index(string1)
+            index2 = data.index(string2)
+            if index1 != desired_index:
+              print(f"Ginger/Crying hotfix: {filename}")
+              data.pop(index1)
+              data.insert(desired_index, string1)
+            else:
+              print(f"Ginger/Crying correct position: {filename}")
         f.seek(0)
         json.dump(data, f, indent=2)
 
@@ -39,17 +66,21 @@ def insert_string_after_string(directory, string_triples):
         data = json.load(f)
         for string1, string2, desired_index in string_triples:
           if string1 in data:
-            index = data.index(string1)
-            data.insert(desired_index, string2)  # Add after string1
-            f.seek(0)
-            json.dump(data, f, indent=2)
+            if string1 not in data:
+              print(f"Bells hotfix: {filename}")
+              index = data.index(string1)
+              data.insert(desired_index, string2)  # Add after string1
+              f.seek(0)
+              json.dump(data, f, indent=2)
+            else:
+              print(f"Bells already fixed: {filename}")
 
 # Example usage
-directory = sys.argv[1]
-if not os.path.exists(directory):
-  print("Try again NIGGER!")
-  exit(696969)
+directory = "/home/cris/Documents/dev/composite/CatBuilderData"
 string_pairs = [("Extra/Wings.png", 4), ("Extra/Scarlet.png", 4)]
 string_triples = [("Hat/BellTop.png", "Hat/BellBottom.png", 2)]
+triple = [("Eyes/Crying.png", "Hair/GingerOrange.png", 3), ("Eyes/Crying.png", "Hair/GingerPink.png", 3)]
+
+conditional_move_string_in_json(directory, triple)
 move_string_in_json(directory, string_pairs)
 insert_string_after_string(directory, string_triples)
