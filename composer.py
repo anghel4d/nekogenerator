@@ -5,12 +5,16 @@ import sys
 from PIL import Image
 from multiprocessing import Pool
 
-start_cat = int(sys.argv[1])
+builder_data_dir = sys.argv[1]
+if not os.path.exists(builder_data_dir):
+    print("Try again NIGGER!")
+    exit(696969)
+start_cat = int(sys.argv[2])
 
 script_dir = os.path.dirname(__file__)
 
 def build(catIndex):
-    builderPath = "CatBuilderData/" + str(catIndex + 1) + ".json"
+    builderPath = builder_data_dir + '/' + str(catIndex + 1) + ".json"
     absBuilderPath = os.path.join(script_dir, builderPath)
     catFiles = []
     with open(absBuilderPath) as json_file:
@@ -19,6 +23,7 @@ def build(catIndex):
     background = Image.open('output.png')
     print(catIndex)
 
+    os.makedirs(os.path.dirname("./cats"), exist_ok=True)
     for fileIndex in range(len(catFiles)):
         foreground = Image.open('parts/' + catFiles[fileIndex])
 
