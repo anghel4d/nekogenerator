@@ -232,4 +232,4 @@ def buildNekos(start_num = 0, total_count = 3000, output_dir = "Output/Nekos/"):
             f.write(the_nekos[i].getBuilderList())
 
 # Neko
-buildNekos(start_num = 0, total_count = 3000, output_dir = "Output/TNDTNDTND!!!!!/")
+buildNekos(start_num = 0, total_count = 3000, output_dir = "Output/TOTALNEKODEATH!!!!!/")

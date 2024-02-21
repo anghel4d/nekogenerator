@@ -1180,13 +1180,6 @@
     },
 
     {
-        "name": "Strawhat",
-        "filename": "Luffy.png",
-        "category": "Hat",
-        "weight": 12
-    },
-
-    {
         "name": "Maha Hat",
         "filename": "Maha.png",
         "category": "Hat",
