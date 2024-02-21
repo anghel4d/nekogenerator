@@ -136,12 +136,17 @@ def addnekoItem(NekoObject, data, categoryName):
     firstMatchingItem = next((item for item in currentItems if any(NekoObject.sets) and item.set in NekoObject.sets), None)
     if firstMatchingItem:
         NekoObject.addItem(firstMatchingItem)
+        if "Crying" in firstMatchingItem.name or "Star" in firstMatchingItem.name:
+            print("Burenyu")
         return filterFromExcludes(data, firstMatchingItem)
     
     # Not in a set, just choose an item normally
     chosenItem = weightedSelection(currentItems)
     if chosenItem is None:
         return None
+    
+    if "Crying" in chosenItem.name or "Star" in chosenItem.name:
+        print("Burenyu")
     
     NekoObject.addItem(chosenItem)
     return filterFromExcludes(data, chosenItem)
@@ -227,4 +232,4 @@ def buildNekos(start_num = 0, total_count = 3000, output_dir = "Output/Nekos/"):
             f.write(the_nekos[i].getBuilderList())
 
 # Neko
-buildNekos(start_num = 0, total_count = 3000, output_dir = "Output/NYAAAAAAAAAAAAAAAAAAAA!!!!!")
+buildNekos(start_num = 0, total_count = 3000, output_dir = "Output/TNDTNDTND!!!!!/")
