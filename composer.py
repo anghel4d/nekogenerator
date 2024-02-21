@@ -14,9 +14,6 @@ if not os.path.exists(builder_data_dir):
 script_dir = os.path.dirname(__file__)
 
 def build(catIndex):
-    print(catIndex)
-
-def builda(catIndex):
     builderPath = builder_data_dir + '/' + str(catIndex + 1) + ".json"
     absBuilderPath = os.path.join(script_dir, builderPath)
     catFiles = []
@@ -54,13 +51,14 @@ if __name__ == '__main__':
     # Scalar tail
     remaining = cats_wanted - (iterations * num_threads)
     last_cat = cats_wanted - remaining
-    for i in range(last_cat, cats_wanted):
-        with Pool(remaining) as p:
-            indices = []
-            for t in range(0, remaining):
-                indices.append((i * remaining) + t)
-            p.map(build, indices)
-            
+    print(remaining)
+    print(last_cat)
+    with Pool(remaining) as p:
+        indices = []
+        for i in range(last_cat, cats_wanted):
+            indices.append(i)
+        p.map(build, indices)
+
 """
 size_t i = 0;
 
