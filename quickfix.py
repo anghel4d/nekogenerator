@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 
 def move_string_in_json(directory, string_pairs):
   """
@@ -76,7 +77,10 @@ def insert_string_after_string(directory, string_triples):
               print(f"Bells already fixed: {filename}")
 
 # Example usage
-directory = "/home/cris/Documents/dev/composite/CatBuilderData"
+directory = sys.argv[1]
+if not os.path.exists(directory):
+  print("Try again NIGGER!")
+  exit(696969)
 string_pairs = [("Extra/Wings.png", 4), ("Extra/Scarlet.png", 4)]
 string_triples = [("Hat/BellTop.png", "Hat/BellBottom.png", 2)]
 triple = [("Eyes/Crying.png", "Hair/GingerOrange.png", 3), ("Eyes/Crying.png", "Hair/GingerPink.png", 3)]
