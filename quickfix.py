@@ -1,6 +1,5 @@
 import json
 import os
-import sys
 
 def move_string_in_json(directory, string_pairs):
   """
@@ -67,7 +66,7 @@ def insert_string_after_string(directory, string_triples):
         data = json.load(f)
         for string1, string2, desired_index in string_triples:
           if string1 in data:
-            if string1 not in data:
+            if string2 not in data:
               print(f"Bells hotfix: {filename}")
               index = data.index(string1)
               data.insert(desired_index, string2)  # Add after string1
@@ -76,15 +75,36 @@ def insert_string_after_string(directory, string_triples):
             else:
               print(f"Bells already fixed: {filename}")
 
+def bump_string_in_json_dir(directory, target_string):
+ """
+ Bumps a string up by one index in JSON files within a directory.
+
+ Args:
+   directory: The directory containing the JSON files.
+   target_string: The string to bump.
+ """
+ for filename in os.listdir(directory):
+   if filename.endswith(".json"):
+     filepath = os.path.join(directory, filename)
+     with open(filepath, "r+") as f:
+       data = json.load(f)
+       if target_string in data:
+         print(f"Star hotfix: {filename}")
+         index = data.index(target_string)
+         if index > 0:
+           data.pop(index)
+           data.insert(index + 1, target_string)
+       f.seek(0)
+       json.dump(data, f, indent=2)
+
 # Example usage
-directory = sys.argv[1]
-if not os.path.exists(directory):
-  print("Try again NIGGER!")
-  exit(696969)
+directory = "/home/cris/Documents/dev/composite/CatBuilderData"
 string_pairs = [("Extra/Wings.png", 4), ("Extra/Scarlet.png", 4)]
 string_triples = [("Hat/BellTop.png", "Hat/BellBottom.png", 2)]
 triple = [("Eyes/Crying.png", "Hair/GingerOrange.png", 3), ("Eyes/Crying.png", "Hair/GingerPink.png", 3)]
+bumpString = "Eyes/Stars.png"
 
 conditional_move_string_in_json(directory, triple)
 move_string_in_json(directory, string_pairs)
 insert_string_after_string(directory, string_triples)
+bump_string_in_json_dir(directory, bumpString)

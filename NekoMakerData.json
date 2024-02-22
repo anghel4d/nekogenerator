@@ -14,6 +14,20 @@
     },
 
     {
+        "name": "Skyrim",
+        "filename": "Skyrim.png",
+        "category": "Background",
+        "weight": 12
+    },
+
+    {
+        "name": "Capitol",
+        "filename": "Capitol.png",
+        "category": "Background",
+        "weight": 12
+    },
+
+    {
         "name": "Creeper",
         "filename": "Creeper.png",
         "category": "Background",
@@ -126,6 +140,13 @@
     },
 
     {
+        "name": "Reptilian",
+        "filename": "Reptilian.png",
+        "category": "Body",
+        "weight": 1
+    },
+
+    {
         "name": "Black",
         "filename": "Black.png",
         "category": "Body",
@@ -170,6 +191,13 @@
     {
         "name": "White",
         "filename": "White.png",
+        "category": "Body",
+        "weight": 12
+    },
+
+    {
+        "name": "Gray",
+        "filename": "Gray.png",
         "category": "Body",
         "weight": 12
     },
